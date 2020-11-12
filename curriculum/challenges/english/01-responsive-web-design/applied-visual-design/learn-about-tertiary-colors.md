@@ -11,12 +11,12 @@ Computer monitors and device screens create different colors by combining amount
 Tertiary colors are the result of combining a primary color with one of its secondary color neighbors. For example, within the RGB color model, red (primary) and yellow (secondary) make orange (tertiary). This adds six more colors to a simple color wheel for a total of twelve.
 There are various methods of selecting different colors that result in a harmonious combination in design. One example that can use tertiary colors is called the split-complementary color scheme. This scheme starts with a base color, then pairs it with the two colors that are adjacent to its complement. The three colors provide strong visual contrast in a design, but are more subtle than using two complementary colors.
 Here are three colors created using the split-complement scheme:
-<table class="table table-striped"><thead><tr><th>Color</th><th>Hex Code</th></tr><thead><tbody><tr><td>orange</td><td>#FF7F00</td></tr><tr><td>cyan</td><td>#00FFFF</td></tr><tr><td>raspberry</td><td>#FF007F</td></tr></tbody></table>
+<table class="table table-striped"><thead><tr><th>Color</th><th>Hex Code</th></tr><thead><tbody><tr><td>orange</td><td>#FF7F00</td></tr><tr><td>cyan</td><td>#00FFFF</td></tr><tr><td>blue</td><td>#0000FF</td></tr></tbody></table>
 </section>
 
 ## Instructions
 <section id='instructions'>
-Change the <code>background-color</code> property of the <code>orange</code>, <code>cyan</code>, and <code>raspberry</code> classes to their respective colors. Make sure to use the hex codes and not the color names.
+Change the <code>background-color</code> property of the <code>orange</code>, <code>cyan</code>, and <code>blue</code> classes to their respective colors. Make sure to use the hex codes and not the color names.
 </section>
 
 ## Tests
@@ -28,10 +28,10 @@ tests:
     testString: assert($('.orange').css('background-color') == 'rgb(255, 127, 0)');
   - text: The <code>div</code> element with class <code>cyan</code> should have a <code>background-color</code> of cyan.
     testString: assert($('.cyan').css('background-color') == 'rgb(0, 255, 255)');
-  - text: The <code>div</code> element with class <code>raspberry</code> should have a <code>background-color</code> of raspberry.
-    testString: assert($('.raspberry').css('background-color') == 'rgb(255, 0, 127)');
+  - text: The <code>div</code> element with class <code>blue</code> should have a <code>background-color</code> of blue.
+    testString: assert($('.blue').css('background-color') == 'rgb(0, 0, 255)');
   - text: All <code>background-color</code> values for the color classes should be hex codes and not color names.
-    testString: assert(!/background-color:\s(orange|cyan|raspberry)/.test(code));
+    testString: assert(!/background-color:\s(orange|cyan|blue)/.test(code));
 
 ```
 
@@ -56,7 +56,7 @@ tests:
     background-color: #000000;
   }
 
-  .raspberry {
+  .blue {
     background-color: #000000;
   }
 
@@ -69,7 +69,7 @@ tests:
 
 <div class="orange"></div>
 <div class="cyan"></div>
-<div class="raspberry"></div>
+<div class="blue"></div>
 ```
 
 </div>
@@ -95,8 +95,8 @@ tests:
     background-color: #00FFFF;
   }
 
-  .raspberry {
-    background-color: #FF007F;
+  .blue {
+    background-color: #0000FF;
   }
 
   div {
@@ -107,7 +107,7 @@ tests:
 </style>
 <div class="orange"></div>
 <div class="cyan"></div>
-<div class="raspberry"></div>
+<div class="blue"></div>
 ```
 
 </section>
